@@ -1,0 +1,3382 @@
+﻿{
+  "TrainingConfigurationVersion": 0,
+  "TrainingTime": 600,
+  "Scenario": {
+    "ScenarioType": "Regression"
+  },
+  "DataSource": {
+    "DataSourceType": "TabularFile",
+    "FilePath": "C:\\Users\\user\\source\\repos\\TaxiFarePrediction\\TaxiFarePrediction\\Data\\taxi-fare-train.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "vendor_id",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true
+      },
+      {
+        "ColumnName": "rate_code",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true
+      },
+      {
+        "ColumnName": "passenger_count",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true
+      },
+      {
+        "ColumnName": "trip_time_in_secs",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "trip_distance",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "payment_type",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true
+      },
+      {
+        "ColumnName": "fare_amount",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      }
+    ]
+  },
+  "Environment": {
+    "EnvironmentType": "LocalCPU"
+  },
+  "RunHistory": {
+    "Trials": [
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.92153622750345854,
+        "RuntimeInSeconds": 2.9260001182556152
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.920803618509706,
+        "RuntimeInSeconds": 4.7600002288818359
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.92029327623915946,
+        "RuntimeInSeconds": 3.6749999523162842
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91946702142021786,
+        "RuntimeInSeconds": 5.2129998207092285
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91922665238223622,
+        "RuntimeInSeconds": 5.7529997825622559
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91898789837949046,
+        "RuntimeInSeconds": 6.4549999237060547
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91883348130903331,
+        "RuntimeInSeconds": 1.5460000038146973
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.918433415809057,
+        "RuntimeInSeconds": 1.7250000238418579
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91830370406710637,
+        "RuntimeInSeconds": 2.6679999828338623
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91826741116475263,
+        "RuntimeInSeconds": 2.7030000686645508
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91804783604623963,
+        "RuntimeInSeconds": 2.2909998893737793
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91780014819780875,
+        "RuntimeInSeconds": 6.8039999008178711
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91772461374593017,
+        "RuntimeInSeconds": 9.3730001449584961
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91766704921144759,
+        "RuntimeInSeconds": 2.000999927520752
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91760642311968765,
+        "RuntimeInSeconds": 2.9300000667572021
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91707167620178065,
+        "RuntimeInSeconds": 4.0159997940063477
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91700239523840532,
+        "RuntimeInSeconds": 1.1909999847412109
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91699122044436221,
+        "RuntimeInSeconds": 3.9389998912811279
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91691513638765854,
+        "RuntimeInSeconds": 2.6140000820159912
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91679900523607472,
+        "RuntimeInSeconds": 1.2020000219345093
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91667122790811417,
+        "RuntimeInSeconds": 5.0539999008178711
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91659554479389493,
+        "RuntimeInSeconds": 6.695000171661377
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91655995974866578,
+        "RuntimeInSeconds": 2.0780000686645508
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91617671384429922,
+        "RuntimeInSeconds": 5.5440001487731934
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91610634463705953,
+        "RuntimeInSeconds": 3.4760000705718994
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91593950014019376,
+        "RuntimeInSeconds": 0.5130000114440918
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91585918528438626,
+        "RuntimeInSeconds": 2.0639998912811279
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91582679500962372,
+        "RuntimeInSeconds": 0.87000000476837158
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91578072459271143,
+        "RuntimeInSeconds": 5.2179999351501465
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91572753599914125,
+        "RuntimeInSeconds": 2.2829999923706055
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91545421431457152,
+        "RuntimeInSeconds": 0.82700002193450928
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91538817983958132,
+        "RuntimeInSeconds": 5.0170001983642578
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91534596502765808,
+        "RuntimeInSeconds": 1.2510000467300415
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91525314767598465,
+        "RuntimeInSeconds": 2.250999927520752
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91523196926813755,
+        "RuntimeInSeconds": 3.119999885559082
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91517058772245852,
+        "RuntimeInSeconds": 0.46700000762939453
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.9149997009249331,
+        "RuntimeInSeconds": 1.0829999446868897
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91493240014801835,
+        "RuntimeInSeconds": 1.8999999761581421
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91484752321625118,
+        "RuntimeInSeconds": 4.0489997863769531
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91472623955752752,
+        "RuntimeInSeconds": 1.7280000448226929
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91446948308804055,
+        "RuntimeInSeconds": 1.7879999876022339
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91433974220908576,
+        "RuntimeInSeconds": 1.7680000066757202
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91433464742102932,
+        "RuntimeInSeconds": 2.6779999732971191
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91421057635224046,
+        "RuntimeInSeconds": 0.16099999845027924
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91414655653102983,
+        "RuntimeInSeconds": 1.9249999523162842
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91382222328840479,
+        "RuntimeInSeconds": 0.91200000047683716
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.913638450740812,
+        "RuntimeInSeconds": 1.6929999589920044
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91363223057293208,
+        "RuntimeInSeconds": 1.1490000486373901
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91358659546352861,
+        "RuntimeInSeconds": 0.47499999403953552
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91320614970891856,
+        "RuntimeInSeconds": 1.996999979019165
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91289348130499537,
+        "RuntimeInSeconds": 0.45699998736381531
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91260829519624709,
+        "RuntimeInSeconds": 1.0679999589920044
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91257690314735052,
+        "RuntimeInSeconds": 8.57800006866455
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.91243332673668265,
+        "RuntimeInSeconds": 0.41699999570846558
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.912259914544867,
+        "RuntimeInSeconds": 0.60799998044967651
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91196286918635749,
+        "RuntimeInSeconds": 1.0880000591278076
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91183426482009367,
+        "RuntimeInSeconds": 22.423000335693359
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91173729797562808,
+        "RuntimeInSeconds": 2.5409998893737793
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91160751902004267,
+        "RuntimeInSeconds": 2.4170000553131104
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91156587209774709,
+        "RuntimeInSeconds": 10.329000473022461
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91111047608105122,
+        "RuntimeInSeconds": 0.8619999885559082
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91099414725778194,
+        "RuntimeInSeconds": 1.5119999647140503
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.910853368388038,
+        "RuntimeInSeconds": 8.5880002975463867
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91069268360606193,
+        "RuntimeInSeconds": 3.9679999351501465
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.9105595704880558,
+        "RuntimeInSeconds": 1.4290000200271606
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91003134033196909,
+        "RuntimeInSeconds": 0.164000004529953
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.91000772873806945,
+        "RuntimeInSeconds": 1.2829999923706055
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90977572495727466,
+        "RuntimeInSeconds": 0.796999990940094
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.90977174729837862,
+        "RuntimeInSeconds": 0.45699998736381531
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90948664141330027,
+        "RuntimeInSeconds": 0.88700002431869507
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90918472745592593,
+        "RuntimeInSeconds": 0.23399999737739563
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90855028646826574,
+        "RuntimeInSeconds": 0.18299999833106995
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.90846054495152284,
+        "RuntimeInSeconds": 0.76399999856948853
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.90842595811222326,
+        "RuntimeInSeconds": 0.54600000381469727
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90789553607067519,
+        "RuntimeInSeconds": 0.31000000238418579
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.90747955576340633,
+        "RuntimeInSeconds": 5.6939997673034668
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.90746275485313865,
+        "RuntimeInSeconds": 1.4029999971389771
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90739698359319088,
+        "RuntimeInSeconds": 0.24300000071525574
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.90731394786175878,
+        "RuntimeInSeconds": 5.7280001640319824
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.90725581406899936,
+        "RuntimeInSeconds": 1.2920000553131104
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90713622460099252,
+        "RuntimeInSeconds": 0.59200000762939453
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.90711740002106633,
+        "RuntimeInSeconds": 0.54199999570846558
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90665826022445151,
+        "RuntimeInSeconds": 0.21299999952316284
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90643346113555934,
+        "RuntimeInSeconds": 0.45500001311302185
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90604649244155655,
+        "RuntimeInSeconds": 0.460999995470047
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90592233306726,
+        "RuntimeInSeconds": 0.40999999642372131
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90580597900384174,
+        "RuntimeInSeconds": 0.5690000057220459
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90572392485598019,
+        "RuntimeInSeconds": 0.49700000882148743
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90566222465553659,
+        "RuntimeInSeconds": 0.68800002336502075
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90564289821813637,
+        "RuntimeInSeconds": 0.45500001311302185
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90556773825810732,
+        "RuntimeInSeconds": 0.64200001955032349
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.905397834864755,
+        "RuntimeInSeconds": 0.32300001382827759
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90532106734353524,
+        "RuntimeInSeconds": 0.71700000762939453
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.9052314872309,
+        "RuntimeInSeconds": 0.23800000548362732
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.9051729030617508,
+        "RuntimeInSeconds": 0.37900000810623169
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90494663511479023,
+        "RuntimeInSeconds": 0.4779999852180481
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90476694161162852,
+        "RuntimeInSeconds": 0.46200001239776611
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90455738392036855,
+        "RuntimeInSeconds": 0.48100000619888306
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.904529899741979,
+        "RuntimeInSeconds": 0.48100000619888306
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.904488976911081,
+        "RuntimeInSeconds": 0.24400000274181366
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90411889867052952,
+        "RuntimeInSeconds": 0.50700002908706665
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.903819471077579,
+        "RuntimeInSeconds": 0.46200001239776611
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90368542283184583,
+        "RuntimeInSeconds": 0.23399999737739563
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90349769506384014,
+        "RuntimeInSeconds": 0.36399999260902405
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90349546238552791,
+        "RuntimeInSeconds": 0.49000000953674316
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90348692074899772,
+        "RuntimeInSeconds": 2.247999906539917
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.9034645582714147,
+        "RuntimeInSeconds": 0.23299999535083771
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90343895088236725,
+        "RuntimeInSeconds": 0.61599999666213989
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90332470309834156,
+        "RuntimeInSeconds": 0.45800000429153442
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90327431686009063,
+        "RuntimeInSeconds": 0.27399998903274536
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.9032250076097863,
+        "RuntimeInSeconds": 0.59600001573562622
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90298743784795787,
+        "RuntimeInSeconds": 0.3919999897480011
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90270903875279074,
+        "RuntimeInSeconds": 0.51899999380111694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90268013355506349,
+        "RuntimeInSeconds": 0.51999998092651367
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90262317397544345,
+        "RuntimeInSeconds": 1.0390000343322754
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.902580634651923,
+        "RuntimeInSeconds": 0.50800001621246338
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90253866702562247,
+        "RuntimeInSeconds": 0.26899999380111694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90249366679434972,
+        "RuntimeInSeconds": 0.2199999988079071
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.9022813181298398,
+        "RuntimeInSeconds": 0.22100000083446503
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.9021316280803644,
+        "RuntimeInSeconds": 0.88700002431869507
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90199900340613093,
+        "RuntimeInSeconds": 0.49599999189376831
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90189952536648121,
+        "RuntimeInSeconds": 0.23199999332427979
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.9018585781403391,
+        "RuntimeInSeconds": 0.58099997043609619
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90185674750749378,
+        "RuntimeInSeconds": 1.0069999694824219
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.901812730410738,
+        "RuntimeInSeconds": 0.46599999070167542
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90180287623690991,
+        "RuntimeInSeconds": 0.45199999213218689
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90176820080118281,
+        "RuntimeInSeconds": 0.50800001621246338
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90171179995630835,
+        "RuntimeInSeconds": 2.1359999179840088
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.9016489556024746,
+        "RuntimeInSeconds": 0.43700000643730164
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90158203460326014,
+        "RuntimeInSeconds": 0.49599999189376831
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90152286654234259,
+        "RuntimeInSeconds": 2.2179999351501465
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90146026939563373,
+        "RuntimeInSeconds": 0.49500000476837158
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90142984209189458,
+        "RuntimeInSeconds": 0.57099997997283936
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90139884215374533,
+        "RuntimeInSeconds": 0.51899999380111694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.9013713551494783,
+        "RuntimeInSeconds": 0.47400000691413879
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.9013426567298628,
+        "RuntimeInSeconds": 0.72699999809265137
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90120426525871411,
+        "RuntimeInSeconds": 0.52100002765655518
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90116357802671387,
+        "RuntimeInSeconds": 0.40099999308586121
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.901125092055833,
+        "RuntimeInSeconds": 0.4869999885559082
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90111640660045289,
+        "RuntimeInSeconds": 0.46599999070167542
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90110182756556279,
+        "RuntimeInSeconds": 0.27599999308586121
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90106889424573733,
+        "RuntimeInSeconds": 0.47299998998641968
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90105197956075245,
+        "RuntimeInSeconds": 0.46799999475479126
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90102359176415014,
+        "RuntimeInSeconds": 0.24400000274181366
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90095351563014625,
+        "RuntimeInSeconds": 0.43399998545646667
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90095276832285709,
+        "RuntimeInSeconds": 0.27300000190734863
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90095205572163517,
+        "RuntimeInSeconds": 0.44499999284744263
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90085242348258732,
+        "RuntimeInSeconds": 0.5899999737739563
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90077171960196867,
+        "RuntimeInSeconds": 0.52499997615814209
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90075322754743725,
+        "RuntimeInSeconds": 0.48899999260902405
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90074266833020089,
+        "RuntimeInSeconds": 0.52700001001358032
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90065577346456038,
+        "RuntimeInSeconds": 0.22699999809265137
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90065191350303764,
+        "RuntimeInSeconds": 0.32400000095367432
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90060452242921174,
+        "RuntimeInSeconds": 0.49700000882148743
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90057674366291529,
+        "RuntimeInSeconds": 0.53600001335144043
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90056644340563263,
+        "RuntimeInSeconds": 0.44900000095367432
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90055128188072153,
+        "RuntimeInSeconds": 0.52600002288818359
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.9004428317051103,
+        "RuntimeInSeconds": 0.55900001525878906
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90040079284028185,
+        "RuntimeInSeconds": 0.23399999737739563
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90036866402362448,
+        "RuntimeInSeconds": 0.54600000381469727
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90036443134393718,
+        "RuntimeInSeconds": 0.46000000834465027
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90028118329203666,
+        "RuntimeInSeconds": 0.34400001168251038
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.900254946179667,
+        "RuntimeInSeconds": 0.43900001049041748
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90024043349423077,
+        "RuntimeInSeconds": 0.23800000548362732
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90021275568532577,
+        "RuntimeInSeconds": 0.44100001454353333
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90015570317822513,
+        "RuntimeInSeconds": 0.51999998092651367
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.90009776462589464,
+        "RuntimeInSeconds": 0.75199997425079346
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.90003084785269238,
+        "RuntimeInSeconds": 0.64800000190734863
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.900017294254801,
+        "RuntimeInSeconds": 0.54199999570846558
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89999623940435447,
+        "RuntimeInSeconds": 0.44900000095367432
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89999500762410545,
+        "RuntimeInSeconds": 0.46500000357627869
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89999037644455049,
+        "RuntimeInSeconds": 0.62900000810623169
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89996166739223915,
+        "RuntimeInSeconds": 0.5
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89989926915275675,
+        "RuntimeInSeconds": 0.47299998998641968
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89986998643369354,
+        "RuntimeInSeconds": 0.65200001001358032
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.899858542284074,
+        "RuntimeInSeconds": 0.40999999642372131
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89981795168328993,
+        "RuntimeInSeconds": 0.26399999856948853
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8997720816064263,
+        "RuntimeInSeconds": 0.40700000524520874
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89974491253693845,
+        "RuntimeInSeconds": 0.23100000619888306
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89967100889045593,
+        "RuntimeInSeconds": 0.57300001382827759
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89961713186686132,
+        "RuntimeInSeconds": 0.47999998927116394
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89960656262653094,
+        "RuntimeInSeconds": 0.57400000095367432
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.899570257881504,
+        "RuntimeInSeconds": 0.44900000095367432
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8995413993797764,
+        "RuntimeInSeconds": 0.43000000715255737
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89943848653247871,
+        "RuntimeInSeconds": 0.48199999332427979
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89943154590458974,
+        "RuntimeInSeconds": 0.52600002288818359
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8993972145522855,
+        "RuntimeInSeconds": 0.59500002861022949
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89939139951347091,
+        "RuntimeInSeconds": 0.45899999141693115
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89937319957951589,
+        "RuntimeInSeconds": 0.4779999852180481
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89937054806410033,
+        "RuntimeInSeconds": 0.66900002956390381
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89934749283156978,
+        "RuntimeInSeconds": 0.25699999928474426
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89930621878565309,
+        "RuntimeInSeconds": 0.6119999885559082
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89927528215834174,
+        "RuntimeInSeconds": 0.98299998044967651
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89923929216786447,
+        "RuntimeInSeconds": 0.23299999535083771
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89921096764733288,
+        "RuntimeInSeconds": 0.53299999237060547
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89919952050214735,
+        "RuntimeInSeconds": 0.45199999213218689
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89915048382527818,
+        "RuntimeInSeconds": 0.27700001001358032
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89913924651294,
+        "RuntimeInSeconds": 0.48600000143051147
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89913453201810334,
+        "RuntimeInSeconds": 0.34099999070167542
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89912369472828435,
+        "RuntimeInSeconds": 0.47499999403953552
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89912275620228188,
+        "RuntimeInSeconds": 0.46700000762939453
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89911523976944,
+        "RuntimeInSeconds": 0.66699999570846558
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89901036646299848,
+        "RuntimeInSeconds": 0.53799998760223389
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89896908269139941,
+        "RuntimeInSeconds": 0.60100001096725464
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.898944856436823,
+        "RuntimeInSeconds": 0.29100000858306885
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89889806518116078,
+        "RuntimeInSeconds": 0.52100002765655518
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89877454262363987,
+        "RuntimeInSeconds": 0.23600000143051148
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.89870298506651558,
+        "RuntimeInSeconds": 0.58700001239776611
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89867108517962169,
+        "RuntimeInSeconds": 0.46200001239776611
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89867064699187382,
+        "RuntimeInSeconds": 0.44499999284744263
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89861468860704252,
+        "RuntimeInSeconds": 0.49799999594688416
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.898474597465411,
+        "RuntimeInSeconds": 0.4779999852180481
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89843216204273668,
+        "RuntimeInSeconds": 0.48199999332427979
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.89841730668332864,
+        "RuntimeInSeconds": 0.40900000929832458
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89840726621216793,
+        "RuntimeInSeconds": 0.859000027179718
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89837382734169335,
+        "RuntimeInSeconds": 0.49399998784065247
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89820341988671659,
+        "RuntimeInSeconds": 0.5910000205039978
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89818704736056287,
+        "RuntimeInSeconds": 0.24300000071525574
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89813970621948336,
+        "RuntimeInSeconds": 0.20900000631809235
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89810000669536227,
+        "RuntimeInSeconds": 0.44999998807907104
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89801482338118566,
+        "RuntimeInSeconds": 0.546999990940094
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8980027314876381,
+        "RuntimeInSeconds": 0.26899999380111694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89798827942864179,
+        "RuntimeInSeconds": 0.5559999942779541
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.897890948817865,
+        "RuntimeInSeconds": 0.53799998760223389
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.89788679554771145,
+        "RuntimeInSeconds": 0.61400002241134644
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89785588237020553,
+        "RuntimeInSeconds": 0.52499997615814209
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.89783017100365314,
+        "RuntimeInSeconds": 0.75099998712539673
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89765404170855956,
+        "RuntimeInSeconds": 0.54600000381469727
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8975575368488603,
+        "RuntimeInSeconds": 0.44900000095367432
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89748660625666543,
+        "RuntimeInSeconds": 0.4869999885559082
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89743880335422532,
+        "RuntimeInSeconds": 0.37900000810623169
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89742924460973572,
+        "RuntimeInSeconds": 0.24300000071525574
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89739446586036109,
+        "RuntimeInSeconds": 0.4830000102519989
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.897389072380856,
+        "RuntimeInSeconds": 0.40799999237060547
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89735132197564127,
+        "RuntimeInSeconds": 0.58700001239776611
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89731238432255889,
+        "RuntimeInSeconds": 0.54100000858306885
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89731230808416984,
+        "RuntimeInSeconds": 0.60000002384185791
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8972354312893539,
+        "RuntimeInSeconds": 0.44999998807907104
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.897170282730584,
+        "RuntimeInSeconds": 0.50999999046325684
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89710097446873971,
+        "RuntimeInSeconds": 0.53200000524520874
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89707112451206183,
+        "RuntimeInSeconds": 0.54400002956390381
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89705376688977878,
+        "RuntimeInSeconds": 0.47499999403953552
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89701501046154453,
+        "RuntimeInSeconds": 0.57099997997283936
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8969942578935286,
+        "RuntimeInSeconds": 0.6679999828338623
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8969312871477052,
+        "RuntimeInSeconds": 0.22699999809265137
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89692409805719564,
+        "RuntimeInSeconds": 0.40999999642372131
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89691719414600712,
+        "RuntimeInSeconds": 0.46700000762939453
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89684779053420971,
+        "RuntimeInSeconds": 0.45600000023841858
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.896794314124241,
+        "RuntimeInSeconds": 0.45100000500679016
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89679195401072509,
+        "RuntimeInSeconds": 0.62900000810623169
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89679174138607154,
+        "RuntimeInSeconds": 0.43900001049041748
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.896769142886125,
+        "RuntimeInSeconds": 0.56499999761581421
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89672141500248137,
+        "RuntimeInSeconds": 0.22200000286102295
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.89667011084190451,
+        "RuntimeInSeconds": 0.70800000429153442
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89665536727525386,
+        "RuntimeInSeconds": 0.57300001382827759
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8966465269038284,
+        "RuntimeInSeconds": 0.23999999463558197
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89662311093093872,
+        "RuntimeInSeconds": 0.39599999785423279
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89659469267603686,
+        "RuntimeInSeconds": 0.57999998331069946
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89658167784620835,
+        "RuntimeInSeconds": 0.23999999463558197
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8965653308790773,
+        "RuntimeInSeconds": 0.43900001049041748
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89654850968478783,
+        "RuntimeInSeconds": 0.55800002813339233
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89653474420519175,
+        "RuntimeInSeconds": 0.50199997425079346
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8964940291369512,
+        "RuntimeInSeconds": 0.2070000022649765
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89647491465740092,
+        "RuntimeInSeconds": 1.4459999799728394
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89645190983749168,
+        "RuntimeInSeconds": 0.51899999380111694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.896388901450376,
+        "RuntimeInSeconds": 0.2460000067949295
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89638344927533642,
+        "RuntimeInSeconds": 0.335999995470047
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89636630270372519,
+        "RuntimeInSeconds": 0.4309999942779541
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89636618674868473,
+        "RuntimeInSeconds": 0.49599999189376831
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89634299941445816,
+        "RuntimeInSeconds": 0.49399998784065247
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89633007497944994,
+        "RuntimeInSeconds": 0.44800001382827759
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89627922734689724,
+        "RuntimeInSeconds": 0.44299998879432678
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89627262429845067,
+        "RuntimeInSeconds": 0.49399998784065247
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89626302906513766,
+        "RuntimeInSeconds": 0.51899999380111694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89622524991223806,
+        "RuntimeInSeconds": 0.546999990940094
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89608042195822235,
+        "RuntimeInSeconds": 0.4869999885559082
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.8960716904380539,
+        "RuntimeInSeconds": 1.3639999628067017
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89595897206158448,
+        "RuntimeInSeconds": 0.47499999403953552
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89595576586227565,
+        "RuntimeInSeconds": 0.57200002670288086
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89592157844445763,
+        "RuntimeInSeconds": 0.55299997329711914
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89590159839265016,
+        "RuntimeInSeconds": 0.52700001001358032
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89577027691495081,
+        "RuntimeInSeconds": 0.527999997138977
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.89573309321790351,
+        "RuntimeInSeconds": 0.718999981880188
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89572950455783373,
+        "RuntimeInSeconds": 0.527999997138977
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89539824255178535,
+        "RuntimeInSeconds": 0.55400002002716064
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89535704528257276,
+        "RuntimeInSeconds": 0.41299998760223389
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89535243267173892,
+        "RuntimeInSeconds": 0.45399999618530273
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89531027455606493,
+        "RuntimeInSeconds": 0.23999999463558197
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89526702896828247,
+        "RuntimeInSeconds": 0.48500001430511475
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89524209816753575,
+        "RuntimeInSeconds": 0.21899999678134918
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.89523507407609593,
+        "RuntimeInSeconds": 1.4789999723434448
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89521891944618237,
+        "RuntimeInSeconds": 0.51700001955032349
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8952111959674991,
+        "RuntimeInSeconds": 0.49000000953674316
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89520678877308313,
+        "RuntimeInSeconds": 0.22800000011920929
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8952063166272175,
+        "RuntimeInSeconds": 0.20999999344348908
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89508130199689129,
+        "RuntimeInSeconds": 0.36899998784065247
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89501577168489976,
+        "RuntimeInSeconds": 0.80400002002716064
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89488580160809694,
+        "RuntimeInSeconds": 0.49099999666213989
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89488185352432448,
+        "RuntimeInSeconds": 0.70499998331069946
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89483513974581452,
+        "RuntimeInSeconds": 0.527999997138977
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.894802574473741,
+        "RuntimeInSeconds": 0.21600000560283661
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89473447828061226,
+        "RuntimeInSeconds": 0.57200002670288086
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89470393748384014,
+        "RuntimeInSeconds": 0.43999999761581421
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89465201377005876,
+        "RuntimeInSeconds": 0.46700000762939453
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89462689752659241,
+        "RuntimeInSeconds": 0.414000004529953
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8945798996286014,
+        "RuntimeInSeconds": 0.73500001430511475
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8945449762777079,
+        "RuntimeInSeconds": 0.44699999690055847
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.894538566351263,
+        "RuntimeInSeconds": 0.5350000262260437
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89451711485516894,
+        "RuntimeInSeconds": 0.44999998807907104
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89449805039486341,
+        "RuntimeInSeconds": 0.34200000762939453
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89447826758748361,
+        "RuntimeInSeconds": 0.47999998927116394
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89438408123786828,
+        "RuntimeInSeconds": 0.31799998879432678
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89429947857969616,
+        "RuntimeInSeconds": 0.40700000524520874
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8942722721481684,
+        "RuntimeInSeconds": 0.24300000071525574
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.894254704627242,
+        "RuntimeInSeconds": 0.50800001621246338
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8942273111807918,
+        "RuntimeInSeconds": 0.43700000643730164
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89416765125852216,
+        "RuntimeInSeconds": 0.50099998712539673
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89415950801723387,
+        "RuntimeInSeconds": 0.71700000762939453
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89407566357559476,
+        "RuntimeInSeconds": 0.50599998235702515
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89406379228557653,
+        "RuntimeInSeconds": 0.46399998664855957
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89403697201359922,
+        "RuntimeInSeconds": 0.453000009059906
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89402678227235055,
+        "RuntimeInSeconds": 0.5
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.893932857268378,
+        "RuntimeInSeconds": 0.51399999856948853
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89392936876538653,
+        "RuntimeInSeconds": 0.41699999570846558
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89387558884832941,
+        "RuntimeInSeconds": 0.5
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89385103260643017,
+        "RuntimeInSeconds": 0.49099999666213989
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89379491274887113,
+        "RuntimeInSeconds": 0.41299998760223389
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89378921177977788,
+        "RuntimeInSeconds": 1.00600004196167
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89371114382487915,
+        "RuntimeInSeconds": 0.42100000381469727
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89361400500567234,
+        "RuntimeInSeconds": 0.5559999942779541
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89360505974824689,
+        "RuntimeInSeconds": 0.527999997138977
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89342696251137232,
+        "RuntimeInSeconds": 0.5339999794960022
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89334906731412356,
+        "RuntimeInSeconds": 0.49900001287460327
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89323528457644086,
+        "RuntimeInSeconds": 0.53600001335144043
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89322754988649333,
+        "RuntimeInSeconds": 0.67299997806549072
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89318124124937881,
+        "RuntimeInSeconds": 0.44900000095367432
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89317010217038,
+        "RuntimeInSeconds": 0.50599998235702515
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89314095903904589,
+        "RuntimeInSeconds": 0.50599998235702515
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.893135068450615,
+        "RuntimeInSeconds": 0.44299998879432678
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89313137904604545,
+        "RuntimeInSeconds": 0.56699997186660767
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89309204217286109,
+        "RuntimeInSeconds": 0.19799999892711639
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.893081099239958,
+        "RuntimeInSeconds": 0.656000018119812
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8930711593042916,
+        "RuntimeInSeconds": 0.25999999046325684
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8930686479577512,
+        "RuntimeInSeconds": 0.43000000715255737
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89301926091807959,
+        "RuntimeInSeconds": 0.47900000214576721
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.8929906686997,
+        "RuntimeInSeconds": 0.20299999415874481
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89297887392939279,
+        "RuntimeInSeconds": 0.4309999942779541
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89296958817934635,
+        "RuntimeInSeconds": 0.52600002288818359
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.89294253932243606,
+        "RuntimeInSeconds": 4.4580001831054688
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89294229292895533,
+        "RuntimeInSeconds": 0.26199999451637268
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89277418275733211,
+        "RuntimeInSeconds": 0.56999999284744263
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89274133629593211,
+        "RuntimeInSeconds": 0.44600000977516174
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89271690268648807,
+        "RuntimeInSeconds": 0.421999990940094
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.892646826977169,
+        "RuntimeInSeconds": 0.27000001072883606
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89261234974029,
+        "RuntimeInSeconds": 0.26899999380111694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89259696748675665,
+        "RuntimeInSeconds": 0.70999997854232788
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.892533810486306,
+        "RuntimeInSeconds": 0.43900001049041748
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89251277431509868,
+        "RuntimeInSeconds": 0.50099998712539673
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89250053077939717,
+        "RuntimeInSeconds": 0.44299998879432678
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89249987769986716,
+        "RuntimeInSeconds": 0.40999999642372131
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8924318696888377,
+        "RuntimeInSeconds": 0.21400000154972076
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89236482577874787,
+        "RuntimeInSeconds": 0.4779999852180481
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.89222397275122634,
+        "RuntimeInSeconds": 0.39800000190734863
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8921710264820355,
+        "RuntimeInSeconds": 0.39100000262260437
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89213235355738385,
+        "RuntimeInSeconds": 0.515999972820282
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89210384873842208,
+        "RuntimeInSeconds": 0.48500001430511475
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89209226488617355,
+        "RuntimeInSeconds": 0.24199999868869782
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8920367349981706,
+        "RuntimeInSeconds": 0.46599999070167542
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89171870552061572,
+        "RuntimeInSeconds": 0.27399998903274536
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89167965001942417,
+        "RuntimeInSeconds": 0.25299999117851257
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89163182242854044,
+        "RuntimeInSeconds": 0.47600001096725464
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89161742885302908,
+        "RuntimeInSeconds": 0.574999988079071
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89156142675873573,
+        "RuntimeInSeconds": 0.22900000214576721
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89152924609683,
+        "RuntimeInSeconds": 0.50999999046325684
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89151865096736094,
+        "RuntimeInSeconds": 0.54400002956390381
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89144184603034982,
+        "RuntimeInSeconds": 0.32300001382827759
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89131901535368119,
+        "RuntimeInSeconds": 0.21600000560283661
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.891318815118831,
+        "RuntimeInSeconds": 0.63499999046325684
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89116359386814692,
+        "RuntimeInSeconds": 0.22400000691413879
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89091883555463558,
+        "RuntimeInSeconds": 0.43599998950958252
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89089378831480193,
+        "RuntimeInSeconds": 0.43299999833106995
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.890867715562006,
+        "RuntimeInSeconds": 0.24099999666213989
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89079519805128493,
+        "RuntimeInSeconds": 0.45899999141693115
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89072113283521648,
+        "RuntimeInSeconds": 0.66299998760223389
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89067730862199412,
+        "RuntimeInSeconds": 0.27700001001358032
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89057708627481613,
+        "RuntimeInSeconds": 0.71799999475479126
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89052114784402114,
+        "RuntimeInSeconds": 0.53299999237060547
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89051849200170552,
+        "RuntimeInSeconds": 0.31200000643730164
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89051184813575368,
+        "RuntimeInSeconds": 0.44699999690055847
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89047233450267538,
+        "RuntimeInSeconds": 1.0349999666213989
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8904197208061041,
+        "RuntimeInSeconds": 0.51700001955032349
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89037419434127463,
+        "RuntimeInSeconds": 0.515999972820282
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.89032786978687406,
+        "RuntimeInSeconds": 0.44100001454353333
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.8900560910990114,
+        "RuntimeInSeconds": 0.39300000667572021
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.889974362101992,
+        "RuntimeInSeconds": 0.26899999380111694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.889930731636431,
+        "RuntimeInSeconds": 0.43999999761581421
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.889725603169492,
+        "RuntimeInSeconds": 0.24500000476837158
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.889713905877519,
+        "RuntimeInSeconds": 0.22800000011920929
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88969141278303931,
+        "RuntimeInSeconds": 0.44499999284744263
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88968743951272733,
+        "RuntimeInSeconds": 0.26499998569488525
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88965780044648357,
+        "RuntimeInSeconds": 0.45399999618530273
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88953644969647816,
+        "RuntimeInSeconds": 0.51200002431869507
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88934098159581643,
+        "RuntimeInSeconds": 0.55699998140335083
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88933666899403552,
+        "RuntimeInSeconds": 0.4050000011920929
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88932066506104279,
+        "RuntimeInSeconds": 0.4440000057220459
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88928282256026214,
+        "RuntimeInSeconds": 0.48800000548362732
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88927748587028033,
+        "RuntimeInSeconds": 0.43299999833106995
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88927219439144789,
+        "RuntimeInSeconds": 0.38199999928474426
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88927157853954786,
+        "RuntimeInSeconds": 0.26499998569488525
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88920651958820618,
+        "RuntimeInSeconds": 0.49500000476837158
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.889111657739173,
+        "RuntimeInSeconds": 0.44600000977516174
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88910642952814278,
+        "RuntimeInSeconds": 0.96299999952316284
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88906534437891738,
+        "RuntimeInSeconds": 0.50099998712539673
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88900901370309238,
+        "RuntimeInSeconds": 0.6380000114440918
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88892896266178634,
+        "RuntimeInSeconds": 0.621999979019165
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88887095629165191,
+        "RuntimeInSeconds": 0.45100000500679016
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88880605454730077,
+        "RuntimeInSeconds": 0.57400000095367432
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88878443099518734,
+        "RuntimeInSeconds": 0.26199999451637268
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88877125963489589,
+        "RuntimeInSeconds": 0.699999988079071
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88864510723100287,
+        "RuntimeInSeconds": 0.8410000205039978
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88860801239440268,
+        "RuntimeInSeconds": 1.1380000114440918
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88860668485894456,
+        "RuntimeInSeconds": 0.57099997997283936
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88857946764466755,
+        "RuntimeInSeconds": 0.24500000476837158
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88854241230473185,
+        "RuntimeInSeconds": 0.47600001096725464
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88844896942646268,
+        "RuntimeInSeconds": 0.45500001311302185
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.888332772389227,
+        "RuntimeInSeconds": 0.64800000190734863
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88830651610380684,
+        "RuntimeInSeconds": 0.65499997138977051
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88813988072163152,
+        "RuntimeInSeconds": 0.37200000882148743
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88811514553979842,
+        "RuntimeInSeconds": 0.25
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88797289571621651,
+        "RuntimeInSeconds": 0.68000000715255737
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88793622727691124,
+        "RuntimeInSeconds": 0.43700000643730164
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88757547612195131,
+        "RuntimeInSeconds": 0.5690000057220459
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88754089341344922,
+        "RuntimeInSeconds": 0.515999972820282
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.887494212007032,
+        "RuntimeInSeconds": 0.57700002193450928
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88749374346597032,
+        "RuntimeInSeconds": 0.22900000214576721
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88749035827427036,
+        "RuntimeInSeconds": 0.7070000171661377
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88748107387199993,
+        "RuntimeInSeconds": 0.45699998736381531
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88743811639457049,
+        "RuntimeInSeconds": 0.52700001001358032
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88742569815037164,
+        "RuntimeInSeconds": 0.18899999558925629
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88741370000702036,
+        "RuntimeInSeconds": 0.56400001049041748
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88717702216680994,
+        "RuntimeInSeconds": 0.35400000214576721
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88715475776135921,
+        "RuntimeInSeconds": 0.5130000114440918
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88686254909151185,
+        "RuntimeInSeconds": 0.44299998879432678
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.8868000257225882,
+        "RuntimeInSeconds": 0.30099999904632568
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88678238270157506,
+        "RuntimeInSeconds": 0.24099999666213989
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.886771840418285,
+        "RuntimeInSeconds": 0.59799998998641968
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88662127369596966,
+        "RuntimeInSeconds": 0.49300000071525574
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88649006495422811,
+        "RuntimeInSeconds": 0.5220000147819519
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88624774262039008,
+        "RuntimeInSeconds": 0.421999990940094
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88616857438407315,
+        "RuntimeInSeconds": 0.43999999761581421
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88586309050389822,
+        "RuntimeInSeconds": 0.67699998617172241
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88585329049286232,
+        "RuntimeInSeconds": 0.26899999380111694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88574597903175623,
+        "RuntimeInSeconds": 0.87999999523162842
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88559017248037764,
+        "RuntimeInSeconds": 0.51999998092651367
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88551178429265265,
+        "RuntimeInSeconds": 0.25499999523162842
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88536589606998617,
+        "RuntimeInSeconds": 0.5690000057220459
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8852598847095926,
+        "RuntimeInSeconds": 0.47499999403953552
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88510782398491816,
+        "RuntimeInSeconds": 0.24500000476837158
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88508730820771686,
+        "RuntimeInSeconds": 0.23100000619888306
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88505002664069454,
+        "RuntimeInSeconds": 0.80299997329711914
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8847412634749654,
+        "RuntimeInSeconds": 0.414000004529953
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88467997902703244,
+        "RuntimeInSeconds": 0.48500001430511475
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88445047015599154,
+        "RuntimeInSeconds": 0.60799998044967651
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88431935457494271,
+        "RuntimeInSeconds": 0.5339999794960022
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.884119005665342,
+        "RuntimeInSeconds": 0.5339999794960022
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.883867626935261,
+        "RuntimeInSeconds": 0.60399997234344482
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88380782212231335,
+        "RuntimeInSeconds": 1.0570000410079956
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88370163470066754,
+        "RuntimeInSeconds": 0.61400002241134644
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88359469575629945,
+        "RuntimeInSeconds": 1.50600004196167
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88343153614991876,
+        "RuntimeInSeconds": 0.46200001239776611
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.88314356984729947,
+        "RuntimeInSeconds": 8.8210000991821289
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88279371998198508,
+        "RuntimeInSeconds": 0.2199999988079071
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8825650114181206,
+        "RuntimeInSeconds": 0.2669999897480011
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88226881240696975,
+        "RuntimeInSeconds": 0.23999999463558197
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88223297054005134,
+        "RuntimeInSeconds": 0.61799997091293335
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.88217456269647343,
+        "RuntimeInSeconds": 0.75700002908706665
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88211165268946334,
+        "RuntimeInSeconds": 0.30199998617172241
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88198774088959464,
+        "RuntimeInSeconds": 0.46799999475479126
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88179273015154747,
+        "RuntimeInSeconds": 0.45899999141693115
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88151974042114412,
+        "RuntimeInSeconds": 0.23899999260902405
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88151544002979509,
+        "RuntimeInSeconds": 0.5
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.881047356245304,
+        "RuntimeInSeconds": 0.33300000429153442
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88095825765815527,
+        "RuntimeInSeconds": 0.421999990940094
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88052713948231154,
+        "RuntimeInSeconds": 0.23000000417232513
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88045236183890685,
+        "RuntimeInSeconds": 0.51099997758865356
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88008988953509,
+        "RuntimeInSeconds": 0.4869999885559082
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87979610487237436,
+        "RuntimeInSeconds": 0.73000001907348633
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.8795185276066535,
+        "RuntimeInSeconds": 1.5859999656677246
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87933749035374242,
+        "RuntimeInSeconds": 0.296999990940094
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87922118190551557,
+        "RuntimeInSeconds": 0.675000011920929
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87916602474217953,
+        "RuntimeInSeconds": 0.56999999284744263
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87907827681186734,
+        "RuntimeInSeconds": 0.2070000022649765
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.87876692906602716,
+        "RuntimeInSeconds": 0.97899997234344482
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87854093412171075,
+        "RuntimeInSeconds": 0.38600000739097595
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87831051586792253,
+        "RuntimeInSeconds": 0.49599999189376831
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8778316397042274,
+        "RuntimeInSeconds": 0.63200002908706665
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87769175949675426,
+        "RuntimeInSeconds": 0.57200002670288086
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8775217520765124,
+        "RuntimeInSeconds": 0.63200002908706665
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87749213787163227,
+        "RuntimeInSeconds": 0.43000000715255737
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87718410739831931,
+        "RuntimeInSeconds": 0.574999988079071
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87681961377068762,
+        "RuntimeInSeconds": 0.46500000357627869
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87672897787296711,
+        "RuntimeInSeconds": 0.44499999284744263
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87669982454543927,
+        "RuntimeInSeconds": 0.367000013589859
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87660339973259815,
+        "RuntimeInSeconds": 0.44200000166893005
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.876277418453142,
+        "RuntimeInSeconds": 0.23999999463558197
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87602389695246208,
+        "RuntimeInSeconds": 0.54100000858306885
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.8760070651532067,
+        "RuntimeInSeconds": 2.1570000648498535
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87587187005494371,
+        "RuntimeInSeconds": 0.5350000262260437
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87536667453333139,
+        "RuntimeInSeconds": 0.703000009059906
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87377714708747378,
+        "RuntimeInSeconds": 2.26200008392334
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.87325322581445841,
+        "RuntimeInSeconds": 4.189000129699707
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87303579988549762,
+        "RuntimeInSeconds": 0.47099998593330383
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.872786815155234,
+        "RuntimeInSeconds": 0.98199999332427979
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87142943307494847,
+        "RuntimeInSeconds": 0.50900000333786011
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87120000987984925,
+        "RuntimeInSeconds": 0.50700002908706665
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87102554854462921,
+        "RuntimeInSeconds": 0.40099999308586121
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.87018800598959589,
+        "RuntimeInSeconds": 0.5339999794960022
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.86837481736966193,
+        "RuntimeInSeconds": 0.18899999558925629
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.86819866439385551,
+        "RuntimeInSeconds": 0.74800002574920654
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.86813230504954064,
+        "RuntimeInSeconds": 0.32499998807907104
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8678348594763573,
+        "RuntimeInSeconds": 0.24500000476837158
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8676324710291774,
+        "RuntimeInSeconds": 0.42899999022483826
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.86746814809489248,
+        "RuntimeInSeconds": 0.42100000381469727
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.86743769905687151,
+        "RuntimeInSeconds": 1.1230000257492065
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.865358889843052,
+        "RuntimeInSeconds": 0.70999997854232788
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.86518618044608808,
+        "RuntimeInSeconds": 0.69199997186660767
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.86426444261238111,
+        "RuntimeInSeconds": 0.21699999272823334
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.864099001538206,
+        "RuntimeInSeconds": 0.25699999928474426
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.86372830389768973,
+        "RuntimeInSeconds": 0.492000013589859
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.86330120375226516,
+        "RuntimeInSeconds": 1.3890000581741333
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.86148922231799552,
+        "RuntimeInSeconds": 0.73199999332427979
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.86135404929695869,
+        "RuntimeInSeconds": 0.48800000548362732
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.85778333239015592,
+        "RuntimeInSeconds": 0.503000020980835
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.85463537831406711,
+        "RuntimeInSeconds": 0.3919999897480011
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.85227856940260227,
+        "RuntimeInSeconds": 0.38600000739097595
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.85101991155257162,
+        "RuntimeInSeconds": 1.1759999990463257
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.84883933339036244,
+        "RuntimeInSeconds": 0.26100000739097595
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.84677135008591708,
+        "RuntimeInSeconds": 0.85399997234344482
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8426829019125418,
+        "RuntimeInSeconds": 0.5
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8424215610035265,
+        "RuntimeInSeconds": 0.51700001955032349
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.84103165865407981,
+        "RuntimeInSeconds": 1.7899999618530273
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.84100567526359493,
+        "RuntimeInSeconds": 0.13400000333786011
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.83899278594312643,
+        "RuntimeInSeconds": 0.23999999463558197
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.83582827261769865,
+        "RuntimeInSeconds": 3.4189999103546143
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.82974829849339926,
+        "RuntimeInSeconds": 0.6600000262260437
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.82699683480083341,
+        "RuntimeInSeconds": 0.56000000238418579
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.8263302209132678,
+        "RuntimeInSeconds": 0.367000013589859
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.82594731356338735,
+        "RuntimeInSeconds": 0.42800000309944153
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.825174348650392,
+        "RuntimeInSeconds": 0.8320000171661377
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.82274416597801447,
+        "RuntimeInSeconds": 1.8680000305175781
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.81653864560557632,
+        "RuntimeInSeconds": 0.91600000858306885
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.816189203857662,
+        "RuntimeInSeconds": 0.63300001621246338
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.81321715379615034,
+        "RuntimeInSeconds": 0.23100000619888306
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.81093319930555829,
+        "RuntimeInSeconds": 0.56000000238418579
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.80525775451822557,
+        "RuntimeInSeconds": 0.25400000810623169
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.80452974531122012,
+        "RuntimeInSeconds": 4.0229997634887695
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.799479116644796,
+        "RuntimeInSeconds": 0.41600000858306885
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.77551289531041423,
+        "RuntimeInSeconds": 1.1670000553131104
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.77291306650026537,
+        "RuntimeInSeconds": 0.43200001120567322
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.76716799048170037,
+        "RuntimeInSeconds": 0.69800001382827759
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.76053816877459413,
+        "RuntimeInSeconds": 0.45699998736381531
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.73490383473642451,
+        "RuntimeInSeconds": 0.55099999904632568
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.67134605763515975,
+        "RuntimeInSeconds": 2.9130001068115234
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.64872685131130992,
+        "RuntimeInSeconds": 0.32400000095367432
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.64769832193250909,
+        "RuntimeInSeconds": 0.46500000357627869
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.63578774431079388,
+        "RuntimeInSeconds": 2.3459999561309814
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.605119412715223,
+        "RuntimeInSeconds": 0.35400000214576721
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.58457969735457027,
+        "RuntimeInSeconds": 3.7639999389648438
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.569471140049054,
+        "RuntimeInSeconds": 3.6400001049041748
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.56505879710077478,
+        "RuntimeInSeconds": 0.50099998712539673
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.56436840131563693,
+        "RuntimeInSeconds": 0.22300000488758087
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.534259098576553,
+        "RuntimeInSeconds": 1.0230000019073486
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.53286813979001124,
+        "RuntimeInSeconds": 7.2890000343322754
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.50891865652667334,
+        "RuntimeInSeconds": 4.0529999732971191
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.50753116103493012,
+        "RuntimeInSeconds": 0.25999999046325684
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.47119008404839557,
+        "RuntimeInSeconds": 0.56099998950958252
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.41239000878212029,
+        "RuntimeInSeconds": 0.31000000238418579
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.3922647811043708,
+        "RuntimeInSeconds": 0.40599998831748962
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.38833615585689107,
+        "RuntimeInSeconds": 3.4639999866485596
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.36508140023271296,
+        "RuntimeInSeconds": 1.4850000143051148
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.33589938332770408,
+        "RuntimeInSeconds": 2.6630001068115234
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.32869308444500045,
+        "RuntimeInSeconds": 0.628000020980835
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.32826131975362116,
+        "RuntimeInSeconds": 0.53899997472763062
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.32561142095558704,
+        "RuntimeInSeconds": 0.45699998736381531
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.32406356255170121,
+        "RuntimeInSeconds": 0.40599998831748962
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.32177708349852396,
+        "RuntimeInSeconds": 0.40000000596046448
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.32177531291541883,
+        "RuntimeInSeconds": 0.40200001001358032
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.32138000065099592,
+        "RuntimeInSeconds": 0.54600000381469727
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.31728563998240356,
+        "RuntimeInSeconds": 0.38699999451637268
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.31714162392248679,
+        "RuntimeInSeconds": 0.22900000214576721
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.311324107282705,
+        "RuntimeInSeconds": 0.51700001955032349
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.30656217193704349,
+        "RuntimeInSeconds": 0.44200000166893005
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.3065049570823557,
+        "RuntimeInSeconds": 0.43000000715255737
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.30642662845188851,
+        "RuntimeInSeconds": 0.44900000095367432
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.30364309579498505,
+        "RuntimeInSeconds": 0.34000000357627869
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.30295615646274676,
+        "RuntimeInSeconds": 0.19099999964237213
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.29977842930179133,
+        "RuntimeInSeconds": 0.19599999487400055
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.29834670613868408,
+        "RuntimeInSeconds": 0.4050000011920929
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.29778706585451753,
+        "RuntimeInSeconds": 0.41200000047683716
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.28833970786068008,
+        "RuntimeInSeconds": 0.26499998569488525
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.27910624794272243,
+        "RuntimeInSeconds": 0.40000000596046448
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.24756206629262134,
+        "RuntimeInSeconds": 0.19799999892711639
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.23915909921107825,
+        "RuntimeInSeconds": 0.87099999189376831
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.22936621129528378,
+        "RuntimeInSeconds": 0.56499999761581421
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.22000846239009475,
+        "RuntimeInSeconds": 2.6710000038146973
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.21368795326563306,
+        "RuntimeInSeconds": 0.57899999618530273
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.19701802722658868,
+        "RuntimeInSeconds": 3.244999885559082
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.16888646485345182,
+        "RuntimeInSeconds": 0.5339999794960022
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.16771453319414276,
+        "RuntimeInSeconds": 0.6600000262260437
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.16615364590690518,
+        "RuntimeInSeconds": 0.66600000858306885
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.15673336135424132,
+        "RuntimeInSeconds": 0.70800000429153442
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.15469913977018146,
+        "RuntimeInSeconds": 0.25600001215934753
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.1519659070281808,
+        "RuntimeInSeconds": 0.55099999904632568
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.14927346750084136,
+        "RuntimeInSeconds": 0.625
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.13225748718806885,
+        "RuntimeInSeconds": 0.17599999904632568
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.13153010460210346,
+        "RuntimeInSeconds": 1.6499999761581421
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.10966938960093975,
+        "RuntimeInSeconds": 0.68900001049041748
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.10163637157522787,
+        "RuntimeInSeconds": 0.58399999141693115
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.091027936548482624,
+        "RuntimeInSeconds": 0.44999998807907104
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.076751119817121238,
+        "RuntimeInSeconds": 0.37900000810623169
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.06544959416089613,
+        "RuntimeInSeconds": 1.5190000534057617
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.0653089453729786,
+        "RuntimeInSeconds": 0.46399998664855957
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.06109156157551443,
+        "RuntimeInSeconds": 0.29600000381469727
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.060520228070171989,
+        "RuntimeInSeconds": 0.18999999761581421
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.054140212607930671,
+        "RuntimeInSeconds": 0.38199999928474426
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.044419475963127342,
+        "RuntimeInSeconds": 0.4699999988079071
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.030871595155549492,
+        "RuntimeInSeconds": 0.3059999942779541
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.028109147895710507,
+        "RuntimeInSeconds": 0.1679999977350235
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.021591647617505871,
+        "RuntimeInSeconds": 0.53200000524520874
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.021362934498743824,
+        "RuntimeInSeconds": 0.53600001335144043
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.0041202203054520048,
+        "RuntimeInSeconds": 0.25200000405311584
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.0079167519517777674,
+        "RuntimeInSeconds": 1.8760000467300415
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.013949826400158516,
+        "RuntimeInSeconds": 0.28799998760223389
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -0.041022845865777313,
+        "RuntimeInSeconds": 1.1000000238418579
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.050477428693175286,
+        "RuntimeInSeconds": 0.3619999885559082
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.084232946456916036,
+        "RuntimeInSeconds": 0.2800000011920929
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -0.20958496311715691,
+        "RuntimeInSeconds": 0.45699998736381531
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.23527120724136319,
+        "RuntimeInSeconds": 0.31799998879432678
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.44589682474882175,
+        "RuntimeInSeconds": 0.45100000500679016
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.45269741595836965,
+        "RuntimeInSeconds": 0.63099998235702515
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.52641732236020089,
+        "RuntimeInSeconds": 1.4989999532699585
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.53486788910224825,
+        "RuntimeInSeconds": 0.38400000333786011
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -0.56873338061789824,
+        "RuntimeInSeconds": 0.89999997615814209
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": -0.57440874117039376,
+        "RuntimeInSeconds": 0.20499999821186066
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -0.80975741856220562,
+        "RuntimeInSeconds": 0.76099997758865356
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -0.88596908544221709,
+        "RuntimeInSeconds": 1.4409999847412109
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": -1.0156404805309358,
+        "RuntimeInSeconds": 0.58399999141693115
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.0289149068794847,
+        "RuntimeInSeconds": 3.7049999237060547
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.0481817511144254,
+        "RuntimeInSeconds": 0.52600002288818359
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.055420327066035,
+        "RuntimeInSeconds": 2.4649999141693115
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.0593231082132313,
+        "RuntimeInSeconds": 0.45500001311302185
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.1163133155786231,
+        "RuntimeInSeconds": 1.0470000505447388
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.1391525061009227,
+        "RuntimeInSeconds": 0.86599999666213989
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.1432442015787667,
+        "RuntimeInSeconds": 0.32600000500679016
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.2140239119081517,
+        "RuntimeInSeconds": 0.31799998879432678
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.2146759672148604,
+        "RuntimeInSeconds": 0.33399999141693115
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.2313288963314939,
+        "RuntimeInSeconds": 0.36899998784065247
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -1.2345751989914029,
+        "RuntimeInSeconds": 0.79199999570846558
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": -1.323689568622143,
+        "RuntimeInSeconds": 0.30099999904632568
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": -1.3392214413505279,
+        "RuntimeInSeconds": 0.3529999852180481
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": -1.4599188917135662,
+        "RuntimeInSeconds": 2.0460000038146973
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": -563.24360917310116,
+        "RuntimeInSeconds": 0.9649999737739563
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.88264719926370638,
+        "RuntimeInSeconds": 0.75499999523162842
+      }
+    ],
+    "Pipeline": "[{\"EstimatorType\":\"OneHotEncoding\",\"Inputs\":[\"vendor_id\",\"payment_type\"],\"Outputs\":[\"vendor_id\",\"payment_type\"]},{\"EstimatorType\":\"ReplaceMissingValues\",\"Inputs\":[\"rate_code\",\"passenger_count\",\"trip_distance\"],\"Outputs\":[\"rate_code\",\"passenger_count\",\"trip_distance\"]},{\"EstimatorType\":\"Concatenate\",\"Inputs\":[\"vendor_id\",\"payment_type\",\"rate_code\",\"passenger_count\",\"trip_distance\"],\"Outputs\":[\"Features\"]},{\"LabelColumnName\":\"fare_amount\",\"FeatureColumnName\":\"Features\",\"NumberOfLeaves\":\"468\",\"MinimumExampleCountPerLeaf\":\"4\",\"LearningRate\":\"0.0504490915379616\",\"NumberOfIterations\":\"10\",\"SubsampleFraction\":\"1\",\"FeatureFraction\":\"0.986199781336897\",\"L1Regularization\":\"0.000550677934028019\",\"L2Regularization\":\"4.1805939308242\",\"MaximumBinCountPerFeature\":\"114\",\"EstimatorType\":\"LightGbmRegression\",\"Inputs\":[\"fare_amount\"],\"Outputs\":[\"Features\"]}]",
+    "MetricName": "RSquared"
+  }
+}
