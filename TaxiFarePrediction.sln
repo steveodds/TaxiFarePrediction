@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiFarePrediction", "TaxiFarePrediction\TaxiFarePrediction.csproj", "{6DC301F4-C836-4303-9FCD-D85185DC6783}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLModel_Console", "MLModel_Console\MLModel_Console.csproj", "{7959B7BC-A667-4C38-A62C-B54AEC78E0B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6DC301F4-C836-4303-9FCD-D85185DC6783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DC301F4-C836-4303-9FCD-D85185DC6783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DC301F4-C836-4303-9FCD-D85185DC6783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7959B7BC-A667-4C38-A62C-B54AEC78E0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7959B7BC-A667-4C38-A62C-B54AEC78E0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7959B7BC-A667-4C38-A62C-B54AEC78E0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7959B7BC-A667-4C38-A62C-B54AEC78E0B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
